@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GvidasGVD/dashboard-react-ts.git/static/css/main.f07dee25.css",
-    "main.js": "/GvidasGVD/dashboard-react-ts.git/static/js/main.0696e600.js",
+    "main.css": "/GvidasGVD/dashboard-react-ts.git/static/css/main.21575cf0.css",
+    "main.js": "/GvidasGVD/dashboard-react-ts.git/static/js/main.ca14a490.js",
     "index.html": "/GvidasGVD/dashboard-react-ts.git/index.html",
-    "main.f07dee25.css.map": "/GvidasGVD/dashboard-react-ts.git/static/css/main.f07dee25.css.map",
-    "main.0696e600.js.map": "/GvidasGVD/dashboard-react-ts.git/static/js/main.0696e600.js.map"
+    "main.21575cf0.css.map": "/GvidasGVD/dashboard-react-ts.git/static/css/main.21575cf0.css.map",
+    "main.ca14a490.js.map": "/GvidasGVD/dashboard-react-ts.git/static/js/main.ca14a490.js.map"
   },
   "entrypoints": [
-    "static/css/main.f07dee25.css",
-    "static/js/main.0696e600.js"
+    "static/css/main.21575cf0.css",
+    "static/js/main.ca14a490.js"
   ]
 }
