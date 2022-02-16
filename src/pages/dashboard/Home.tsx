@@ -1,19 +1,19 @@
-import Chart from "../../components/chart/Chart";
-import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
+import Chart from "../../components/home/chart/Chart";
+import FeaturedInfo from "../../components/home/featuredInfo/FeaturedInfo";
 import classes from "./Home.module.css";
 import { userData } from "../../../src/dummyData";
-// import WidgetSm from "../../components/widgetSm/WidgetSm";
-// import WidgetLg from "../../components/widgetLg/WidgetLg";
+import PersonnelWidget from "../../components/home//widgets/PersonnelWidget";
+// import UsersWidget from "../../components/widgetLg/UsersWidget";
 
 export default function Home() {
   return (
     <div className={classes.home}>
       <FeaturedInfo />
-      <Chart data={userData} title="Users Analytics" grid dataKey="Active Users"/>
-      {/* <div className={classes.home_widgets}> */}
-        {/* <WidgetSm/>
-        <WidgetLg/> */}
-      {/* </div> */}
+      <Chart data={userData} title="Active Users" grid dataKey="Active Users"/>
+      <div className={classes.home_widgets}>
+        <PersonnelWidget/>
+        {/* <WidgetLg/> */}
+      </div>
     </div>
   );
 }
