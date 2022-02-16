@@ -3,7 +3,7 @@ import FeaturedInfo from "../../components/home/featuredInfo/FeaturedInfo";
 import classes from "./Home.module.css";
 import { userData } from "../../../src/dummyData";
 import PersonnelWidget from "../../components/home//widgets/PersonnelWidget";
-// import UsersWidget from "../../components/widgetLg/UsersWidget";
+import UsersWidget from "../../components/home//widgets/UsersWidget";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Chart data={userData} title="Active Users" grid dataKey="Active Users"/>
       <div className={classes.home_widgets}>
         <PersonnelWidget/>
-        {/* <WidgetLg/> */}
+        <UsersWidget/>
       </div>
     </div>
   );

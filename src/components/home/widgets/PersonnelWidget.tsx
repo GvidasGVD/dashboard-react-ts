@@ -4,7 +4,7 @@ import { MdOutlineVisibility } from "react-icons/md";
 export default function PersonnelWidget() {
   return (
     <div className={classes.widget}>
-      <span className={classes.widget_title}>New Join Members</span>
+      <span className={classes.widget_title}>New Members</span>
       <ul className={classes.widget_list}>
         <li className={classes.widget_list_item}>
           <img
