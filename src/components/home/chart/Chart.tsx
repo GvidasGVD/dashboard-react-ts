@@ -4,6 +4,7 @@ import {
   LineChart,
   Line,
   XAxis,
+  YAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
@@ -16,6 +17,7 @@ const Chart: React.FC<{title: string, data: any[], dataKey: string, grid: any}> 
       <ResponsiveContainer width="100%" aspect={5 / 1}>
         <LineChart data={props.data}>
           <XAxis dataKey="name" stroke="#5550bd" />
+          <YAxis/>
           <Line type="monotone" dataKey={props.dataKey} stroke="#5550bd" />
           <Tooltip />
           {props.grid && <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5" />}

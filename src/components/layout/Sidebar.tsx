@@ -5,20 +5,23 @@ import {
   MdTimeline,
   MdLineStyle,
   MdOutlinePersonOutline,
-  MdOutlineAnalytics
+  MdOutlineAnalytics,
 } from "react-icons/md";
 import { FaDollarSign } from "react-icons/fa";
 import SidebarMenuGroup from "./SidebarMenuGroup";
 import { RiProductHuntLine, RiSuitcaseLine } from "react-icons/ri";
-import { HiDocumentReport } from 'react-icons/hi'
+import { HiDocumentReport } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
   const dashboardGroup = (
     <SidebarMenuGroup title="Dashboard">
-      <li className={`${classes.sidebar_list_item} ${classes.active}`}>
-        <MdLineStyle className={classes.sidebar_list_icon} />
-        Home
-      </li>
+      <NavLink to="/home">
+        <li className={`${classes.sidebar_list_item} ${classes.active}`}>
+          <MdLineStyle className={classes.sidebar_list_icon} />
+          Home
+        </li>
+      </NavLink>
       <li className={classes.sidebar_list_item}>
         <MdTimeline className={classes.sidebar_list_icon} />
         Analytics
@@ -32,10 +35,12 @@ const SideBar = () => {
 
   const quickMenuGroup = (
     <SidebarMenuGroup title="Quick Menu">
-      <li className={classes.sidebar_list_item}>
-        <MdOutlinePersonOutline className={classes.sidebar_list_icon} />
-        Users
-      </li>
+      <NavLink to="/users">
+        <li className={classes.sidebar_list_item}>
+          <MdOutlinePersonOutline className={classes.sidebar_list_icon} />
+          Users
+        </li>
+      </NavLink>
       <li className={classes.sidebar_list_item}>
         <RiProductHuntLine className={classes.sidebar_list_icon} />
         Products
