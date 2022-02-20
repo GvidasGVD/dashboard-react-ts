@@ -10,9 +10,9 @@ function App() {
     <div className={classes.temporary_width}>
       <Layout>
         <Routes>
-          <Route path="/" element={<Navigate to="dashboard-react-ts.git/home" />}></Route>
-          <Route path="dashboard-react-ts.git/home" element={<Home />}></Route>
-          <Route path="dashboard-react-ts.git/users" element={<Users />}></Route>
+          <Route path="/" element={<Navigate to="dashboard-react-ts/home" />}></Route>
+          <Route path="dashboard-react-ts/home" element={<Home />}></Route>
+          <Route path="dashboard-react-ts/users" element={<Users />}></Route>
         </Routes>
       </Layout>
     </div>

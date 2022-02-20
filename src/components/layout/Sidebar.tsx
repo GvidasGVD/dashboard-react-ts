@@ -19,7 +19,7 @@ const SideBar = () => {
       <li className={`${classes.sidebar_list_item} `}>
         <NavLink
           className={(navData) => (navData.isActive ? classes.active : classes.sidebar_list_item_link)}
-          to="dashboard-react-ts.git/home"
+          to="dashboard-react-ts/home"
         >
           <MdLineStyle className={classes.sidebar_list_icon} />
           Home
@@ -28,7 +28,7 @@ const SideBar = () => {
       <li className={classes.sidebar_list_item}>
       <NavLink
           className={(navData) => (navData.isActive ? classes.active : classes.sidebar_list_item_link)}
-          to="dashboard-react-ts.git/home/analytics"
+          to="dashboard-react-ts/home/analytics"
         >
         <MdTimeline className={classes.sidebar_list_icon} />
         Analytics
@@ -37,7 +37,7 @@ const SideBar = () => {
       <li className={classes.sidebar_list_item}>
       <NavLink
           className={(navData) => (navData.isActive ? classes.active : classes.sidebar_list_item_link)}
-          to="dashboard-react-ts.git/home/sales"
+          to="dashboard-react-ts/home/sales"
         >
         <BiTrendingUp className={classes.sidebar_list_icon} />
         Sales
@@ -53,7 +53,7 @@ const SideBar = () => {
           className={(navData) =>
             navData.isActive ? classes.active : classes.sidebar_list_item_link
           }
-          to="dashboard-react-ts.git/users"
+          to="dashboard-react-ts/users"
         >
           <MdOutlinePersonOutline className={classes.sidebar_list_icon} />
           Users
@@ -64,7 +64,7 @@ const SideBar = () => {
           className={(navData) =>
             navData.isActive ? classes.active : classes.sidebar_list_item_link
           }
-          to="dashboard-react-ts.git/products"
+          to="dashboard-react-ts/products"
         >
         <RiProductHuntLine className={classes.sidebar_list_icon} />
         Products
@@ -75,7 +75,7 @@ const SideBar = () => {
           className={(navData) =>
             navData.isActive ? classes.active : classes.sidebar_list_item_link
           }
-          to="dashboard-react-ts.git/transactions"
+          to="dashboard-react-ts/transactions"
         >
         <FaDollarSign className={classes.sidebar_list_icon} />
         Transactions
@@ -86,7 +86,7 @@ const SideBar = () => {
           className={(navData) =>
             navData.isActive ? classes.active : classes.sidebar_list_item_link
           }
-          to="dashboard-react-ts.git/reports"
+          to="dashboard-react-ts/reports"
         >
         <BiBarChart className={classes.sidebar_list_icon} />
         Reports
@@ -102,7 +102,7 @@ const SideBar = () => {
           className={(navData) =>
             navData.isActive ? classes.active : classes.sidebar_list_item_link
           }
-          to="dashboard-react-ts.git/staff/manage"
+          to="dashboard-react-ts/staff/manage"
         >
         <RiSuitcaseLine className={classes.sidebar_list_icon} />
         Manage
@@ -113,7 +113,7 @@ const SideBar = () => {
           className={(navData) =>
             navData.isActive ? classes.active : classes.sidebar_list_item_link
           }
-          to="dashboard-react-ts.git/staff/analytics"
+          to="dashboard-react-ts/staff/analytics"
         >
         <MdOutlineAnalytics className={classes.sidebar_list_icon} />
         Analytics
@@ -124,7 +124,7 @@ const SideBar = () => {
           className={(navData) =>
             navData.isActive ? classes.active : classes.sidebar_list_item_link
           }
-          to="dashboard-react-ts.git/staff/reports"
+          to="dashboard-react-ts/staff/reports"
         >
         <HiDocumentReport className={classes.sidebar_list_icon} />
         Reports
