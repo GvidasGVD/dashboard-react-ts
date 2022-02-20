@@ -16,42 +16,81 @@ import { NavLink } from "react-router-dom";
 const SideBar = () => {
   const dashboardGroup = (
     <SidebarMenuGroup title="Dashboard">
-      <NavLink to="/home">
-        <li className={`${classes.sidebar_list_item} ${classes.active}`}>
+      <li className={`${classes.sidebar_list_item} `}>
+        <NavLink
+          className={(navData) => (navData.isActive ? classes.active : classes.sidebar_list_item_link)}
+          to="dashboard-react-ts.git/home"
+        >
           <MdLineStyle className={classes.sidebar_list_icon} />
           Home
-        </li>
-      </NavLink>
-      <li className={classes.sidebar_list_item}>
-        <MdTimeline className={classes.sidebar_list_icon} />
-        Analytics
+        </NavLink>
       </li>
       <li className={classes.sidebar_list_item}>
+      <NavLink
+          className={(navData) => (navData.isActive ? classes.active : classes.sidebar_list_item_link)}
+          to="dashboard-react-ts.git/home/analytics"
+        >
+        <MdTimeline className={classes.sidebar_list_icon} />
+        Analytics
+        </NavLink>
+      </li>
+      <li className={classes.sidebar_list_item}>
+      <NavLink
+          className={(navData) => (navData.isActive ? classes.active : classes.sidebar_list_item_link)}
+          to="dashboard-react-ts.git/home/sales"
+        >
         <BiTrendingUp className={classes.sidebar_list_icon} />
         Sales
+        </NavLink>
       </li>
     </SidebarMenuGroup>
   );
 
   const quickMenuGroup = (
     <SidebarMenuGroup title="Quick Menu">
-      <NavLink to="/users">
-        <li className={classes.sidebar_list_item}>
+      <li className={classes.sidebar_list_item}>
+        <NavLink
+          className={(navData) =>
+            navData.isActive ? classes.active : classes.sidebar_list_item_link
+          }
+          to="dashboard-react-ts.git/users"
+        >
           <MdOutlinePersonOutline className={classes.sidebar_list_icon} />
           Users
-        </li>
-      </NavLink>
+        </NavLink>
+      </li>
       <li className={classes.sidebar_list_item}>
+      <NavLink
+          className={(navData) =>
+            navData.isActive ? classes.active : classes.sidebar_list_item_link
+          }
+          to="dashboard-react-ts.git/products"
+        >
         <RiProductHuntLine className={classes.sidebar_list_icon} />
         Products
+        </NavLink>
       </li>
       <li className={classes.sidebar_list_item}>
+      <NavLink
+          className={(navData) =>
+            navData.isActive ? classes.active : classes.sidebar_list_item_link
+          }
+          to="dashboard-react-ts.git/transactions"
+        >
         <FaDollarSign className={classes.sidebar_list_icon} />
         Transactions
+        </NavLink>
       </li>
       <li className={classes.sidebar_list_item}>
+      <NavLink
+          className={(navData) =>
+            navData.isActive ? classes.active : classes.sidebar_list_item_link
+          }
+          to="dashboard-react-ts.git/reports"
+        >
         <BiBarChart className={classes.sidebar_list_icon} />
         Reports
+        </NavLink>
       </li>
     </SidebarMenuGroup>
   );
@@ -59,16 +98,37 @@ const SideBar = () => {
   const staffGroup = (
     <SidebarMenuGroup title="Staff">
       <li className={classes.sidebar_list_item}>
+      <NavLink
+          className={(navData) =>
+            navData.isActive ? classes.active : classes.sidebar_list_item_link
+          }
+          to="dashboard-react-ts.git/staff/manage"
+        >
         <RiSuitcaseLine className={classes.sidebar_list_icon} />
         Manage
+        </NavLink>
       </li>
       <li className={classes.sidebar_list_item}>
+      <NavLink
+          className={(navData) =>
+            navData.isActive ? classes.active : classes.sidebar_list_item_link
+          }
+          to="dashboard-react-ts.git/staff/analytics"
+        >
         <MdOutlineAnalytics className={classes.sidebar_list_icon} />
         Analytics
+        </NavLink>
       </li>
       <li className={classes.sidebar_list_item}>
+      <NavLink
+          className={(navData) =>
+            navData.isActive ? classes.active : classes.sidebar_list_item_link
+          }
+          to="dashboard-react-ts.git/staff/reports"
+        >
         <HiDocumentReport className={classes.sidebar_list_icon} />
         Reports
+        </NavLink>
       </li>
     </SidebarMenuGroup>
   );

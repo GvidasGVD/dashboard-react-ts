@@ -1,11 +1,9 @@
 import classes from "./UsersList.module.css";
 import { RiDeleteBinLine } from "react-icons/ri";
-// import { userRows } from "../../dummyData";
-// import { Link } from "react-router-dom";
 import {
   DataGrid,
   GridToolbarContainer,
-  GridToolbarExport,
+  GridToolbar
 } from "@material-ui/data-grid";
 import { userRows } from "../../dummyData";
 import { Link } from "react-router-dom";
@@ -19,7 +17,7 @@ export default function UserList() {
   };
 
   const columns = [
-    { field: "id", headerName: "User ID", width: 100 },
+    { field: "id", headerName: "U ID", width: 110 },
     {
       field: "user",
       headerName: "User",
@@ -46,7 +44,7 @@ export default function UserList() {
     {
       field: "transaction",
       headerName: "Transaction Volume",
-      width: 160,
+      width: 170,
     },
     {
       field: "action",
@@ -71,7 +69,7 @@ export default function UserList() {
   function CustomToolbar() {
     return (
       <GridToolbarContainer>
-        <GridToolbarExport />
+        <GridToolbar/>
       </GridToolbarContainer>
     );
   }
